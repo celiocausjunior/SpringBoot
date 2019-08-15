@@ -39,6 +39,7 @@ public class Cliente implements Serializable {
 	@CollectionTable(name="TELEFONE")
 	private Set<String> telefones = new HashSet<>();
 	
+	@OneToMany
 	
 	private List<Pedido> pedidos = new ArrayList<>();
 	
